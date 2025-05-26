@@ -6,6 +6,12 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import Icon from "@/components/ui/icon";
 
 const Index = () => {
@@ -97,12 +103,30 @@ const Index = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-2 text-sm text-gray-600">
+                <ul className="space-y-2 text-sm text-gray-600 mb-4">
                   <li>• Мощность от 50 до 400 л.с.</li>
                   <li>• Экономичные двигатели</li>
                   <li>• Комфортные кабины</li>
                 </ul>
-                <Button className="w-full mt-4" variant="outline">
+
+                <Accordion type="single" collapsible className="mb-4">
+                  <AccordionItem value="tractor-types">
+                    <AccordionTrigger className="text-sm">
+                      Подкатегории
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <div className="space-y-2 text-sm text-gray-600">
+                        <div>• Мини-тракторы (до 50 л.с.)</div>
+                        <div>• Садовые тракторы (50-100 л.с.)</div>
+                        <div>• Универсальные тракторы (100-200 л.с.)</div>
+                        <div>• Промышленные тракторы (200+ л.с.)</div>
+                        <div>• Гусеничные тракторы</div>
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+
+                <Button className="w-full" variant="outline">
                   Подробнее
                 </Button>
               </CardContent>
@@ -119,12 +143,30 @@ const Index = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-2 text-sm text-gray-600">
+                <ul className="space-y-2 text-sm text-gray-600 mb-4">
                   <li>• Автопилот и GPS</li>
                   <li>• Низкие потери зерна</li>
                   <li>• Быстрая разгрузка</li>
                 </ul>
-                <Button className="w-full mt-4" variant="outline">
+
+                <Accordion type="single" collapsible className="mb-4">
+                  <AccordionItem value="combine-types">
+                    <AccordionTrigger className="text-sm">
+                      Подкатегории
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <div className="space-y-2 text-sm text-gray-600">
+                        <div>• Зерноуборочные комбайны</div>
+                        <div>• Кормоуборочные комбайны</div>
+                        <div>• Картофелеуборочные комбайны</div>
+                        <div>• Свеклоуборочные комбайны</div>
+                        <div>• Льноуборочные комбайны</div>
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+
+                <Button className="w-full" variant="outline">
                   Подробнее
                 </Button>
               </CardContent>
@@ -141,12 +183,30 @@ const Index = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-2 text-sm text-gray-600">
+                <ul className="space-y-2 text-sm text-gray-600 mb-4">
                   <li>• Прочная конструкция</li>
                   <li>• Точная настройка</li>
                   <li>• Долгий срок службы</li>
                 </ul>
-                <Button className="w-full mt-4" variant="outline">
+
+                <Accordion type="single" collapsible className="mb-4">
+                  <AccordionItem value="tillage-types">
+                    <AccordionTrigger className="text-sm">
+                      Подкатегории
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <div className="space-y-2 text-sm text-gray-600">
+                        <div>• Плуги (отвальные, дисковые)</div>
+                        <div>• Культиваторы (паровые, пропашные)</div>
+                        <div>• Бороны (дисковые, зубовые)</div>
+                        <div>• Лущильники</div>
+                        <div>• Глубокорыхлители</div>
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+
+                <Button className="w-full" variant="outline">
                   Подробнее
                 </Button>
               </CardContent>
