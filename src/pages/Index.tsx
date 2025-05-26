@@ -17,7 +17,9 @@ const Index = () => {
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-2">
               <Icon name="Tractor" size={32} className="text-green-600" />
-              <h1 className="text-2xl font-bold text-gray-900">АгроТех</h1>
+              <h1 className="text-2xl font-bold text-gray-900">
+                Гранд-АгроТех
+              </h1>
             </div>
             <nav className="hidden md:flex space-x-8">
               <a
@@ -264,10 +266,10 @@ const Index = () => {
         <div className="max-w-7xl mx-auto text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">
             <Icon name="Tractor" size={24} className="text-green-500" />
-            <span className="text-xl font-bold">АгроТех</span>
+            <span className="text-xl font-bold">Гранд-АгроТех</span>
           </div>
           <p className="text-gray-400">
-            © 2024 АгроТех. Надежная сельхозтехника для эффективного
+            © 2024 Гранд-АгроТех. Надежная сельхозтехника для эффективного
             земледелия.
           </p>
         </div>
