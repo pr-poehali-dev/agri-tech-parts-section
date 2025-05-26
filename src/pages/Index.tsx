@@ -268,9 +268,8 @@ const Index = () => {
             <Icon name="Tractor" size={24} className="text-green-500" />
             <span className="text-xl font-bold">Гранд-АгроТех</span>
           </div>
-          <p className="text-gray-400">
-            © 2024 Гранд-АгроТех. Надежная сельхозтехника для эффективного
-            земледелия.
+          <p className="text-sm text-gray-600">
+            © 2024 Гранд-АгроТех. Основана в 2021 году.
           </p>
         </div>
       </footer>
